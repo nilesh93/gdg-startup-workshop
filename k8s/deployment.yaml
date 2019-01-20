@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: gdg-node-demo
+  name: gdg-node-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: gdg-node-demo
+  template:
+    metadata:
+      labels:
+        run: gdg-node-demo
+    spec:
+      containers:
+      - image: gcr.io/k8s-demo-229208/gdg-node-demo@sha256:7926a3b29306af58041ae5d32e7319b8925256e1b44cc8beadb0db21b5b67ce8
+        name: gdg-node-demo
+        resources: {}
+status: {}
