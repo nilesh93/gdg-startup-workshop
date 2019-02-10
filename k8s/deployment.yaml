@@ -15,7 +15,7 @@ spec:
         run: gdg-node-demo
     spec:
       containers:
-      - image: gcr.io/platformer-november/gdg-node-demo:v5
+      - image: gcr.io/platformer-november/gdg-node-demo:v6
         name: gdg-node-demo
         ports:
         - containerPort: 8000
