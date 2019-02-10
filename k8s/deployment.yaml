@@ -15,10 +15,10 @@ spec:
         run: gdg-node-demo
     spec:
       containers:
-      - image: gcr.io/platformer-november/gdg-node-demo:v3
+      - image: gcr.io/platformer-november/gdg-node-demo:v5
         name: gdg-node-demo
         ports:
-          - containerPort: 8000
+        - containerPort: 8000
         resources:
           requests:
             cpu: 0.5m
