@@ -12,6 +12,6 @@ RUN rm -Rf node_modules
 
 RUN npm install
 
-
+EXPOSE 8000
 
 CMD ["ts-node", "index.ts"]
